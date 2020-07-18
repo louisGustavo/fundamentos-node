@@ -29,10 +29,6 @@ class CreateTransactionService {
       type
     });
 
-    if (!isUuid(transaction.id)) {
-      throw Error('Not a valid id');
-    }
-
     return transaction;
   }
 }
